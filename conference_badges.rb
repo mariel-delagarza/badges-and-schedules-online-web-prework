@@ -16,6 +16,11 @@ def assign_rooms(attendees)
 end 
   
 def print(attendees)
-   batch_badge_creator(attendees).each.map do |attendee|
+   batch_badge_creator(attendees).each do |attendee|
      puts attendee
-   assign_rooms(attendees).
+   assign_rooms(attendees).each do |attendee|
+     puts attendee
+  end 
+end 
+    
+     
